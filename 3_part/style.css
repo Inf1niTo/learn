@@ -1,0 +1,136 @@
+* {
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  }
+
+
+/* Общий стиль для header */
+header {
+    display: flex;
+    justify-content: space-between; /* Разделяет содержимое на две стороны */
+    align-items: center; /* Центрирует элементы по вертикали */
+    padding: 0 20px; /* Внутренние отступы слева и справа */
+    background-color: #ffffff; /* Фоновый цвет */
+    
+}
+
+header > div h3{
+    display: inline-block;
+    
+}
+
+
+/* Стили для навигации справа */
+.tabBar nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Расстояние между элементами */
+}
+
+.tabBar a {
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+    color: black;
+}
+
+
+/* Кнопка */
+.tabBar .bar {
+    background-color: transparent;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.upText{
+    float: left;
+    padding-left: 10%;
+}
+.leftSide{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: calc(100vh - 100px);
+    background-color: rgb(255, 255, 255);
+    float: left;
+
+}
+
+.rightSide{
+    width: 50%;
+    height: calc(100vh - 100px);
+    background-color: rgb(214, 223, 255);
+    float: right;
+}
+
+.login{
+    padding-left: 20%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.google{
+    background-color: white;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.github{
+    background-color: white;
+    border-radius: 10px;
+    width: 160px;
+    height: 40px;
+    font-weight: 600;
+}
+
+.or{
+    /* необходим для формирования позиций линий */
+    position: relative;
+    /* весь блок будет занимать ширину по размеру контента в нём */
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+}
+
+
+
+.or:before{ 
+    content: " ";
+    background: #888888;
+    width: 150px;
+    height: 1px;
+    top: 10px;
+    right: 5px;
+    position:absolute;
+  }
+
+  .or:after{ 
+    content: " ";
+    background: #888888;
+    width: 140px;
+    height: 1px;
+    /* размещаем линию снизу и справа*/
+    bottom: 10px;
+    right: 200px;
+    /* включаем абсолютное позиционирование относительно блока с relative */
+    position: absolute;
+  }
