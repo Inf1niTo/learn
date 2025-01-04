@@ -10,7 +10,7 @@
     <header>
         <div class="logo">
             <nav> 
-                <img src="#" alt="#">
+                <img src="svg/cube.svg" alt="#">
                 <h3> Aligo</h3>
             </nav>
 
@@ -50,24 +50,27 @@
                 
                 <div class="input">
 
-                    <p>Email Address</p>
-                    <input type="text">
-                    <p>Password</p>
-                    <input type="text">
+                    <label class="text-field__label" for="email">Email Adress</label>
+                    <input class="text-field__input" type="text">
+                    <label class="text-field__label" for="email">Password</label>
+                    <input class="text-field__input" type="text">
 
                 </div>
 
                 <div class="underLogin">
-                    <input type="radio" name="remember" id="remember">
-                    <a>Remember me</a>
+                    <div class="radioText">
+                        <input type="radio" name="remember" id="remember">
+                        <a>Remember me</a>
+                    </div>
                     <a href="#">Forget password</a>
                 </div>
 
                 <button class="loginButton">Login to Your Account</button>
-                <p>Don't have an account?</p>
-                <a href="#">Sign up</a>
 
-
+                <div class="underButtonLogin">
+                    <p>Don't have an account?</p>
+                    <a href="#">Sign up</a>
+                </div>
             </div>
             
         </div>
@@ -75,18 +78,19 @@
         <div class="rightSide">
 
             <div class="upText">
-                <h4>Dasboard</h4>
+                <a>Dasboard</a>
                 <p>Streamline Your Workflow and Focus on What Drives Success!</p>
             </div>
-
-            <img src="#" alt="#">
+            <div>
+                <img src="img/zaglyshka.jpg" alt="#">
+            </div>
         </div>
     </main>
     <footer>
-        <button class="instagramm">inst</button>
-        <button class="x">x</button>
-        <button class="vkontakte">vk</button>
-        <button class="facebook">fb</button>
+        <button class="instagramm"></button>
+        <button class="tg"></button>
+        <button class="vkontakte"></button>
+        <button class="facebook"></button>
     </footer>
 </body>
 <script src="script.js"
