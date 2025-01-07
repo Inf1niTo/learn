@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header > div{
+    display: flex;
+    justify-content: space-between;
+    height:6vw;
+    align-items: center;
+    padding: 0% 5%;
+}
+
+.tabBar{
+    display: flex;
+
+    width: 330px;
+    justify-content: space-around;
+}
+
+.face{
+    display: flexbox;
+
+    height: 80vh;
+    text-align: center;
+    align-content: center;
+}
+.faceText{
+
+}
+
+.firstText{
+    font-weight: 600;
+    font-size: 40px;
+}
+.secondText{
+    font-weight: 700;
+    font-size: 100px;
+    padding-top: 20px;
+}
+
+.media { 
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    margin: 0px 36%;
+}
+
+.media > button:hover { 
+opacity: 0.7;
+}
+
+.faceFacebook{
+    width: 50px;
+    height: 50px;
+    background-image: url(svg/facebook.svg);
+    background-size: cover;
+    border-style: none;
+}
+
+.faceX{
+    width: 50px;
+    height: 50px;
+    background-image: url(svg/twitter.svg);
+    background-size: cover;
+    border-style: none;
+}
+
+.faceInstargam{
+    width: 50px;
+    height: 50px;
+    background-image: url(svg/inst.svg);
+    background-size: cover;
+    border-style: none;
+}
+
+.header > a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    text-decoration: none;
+    color: gray;
+    font-weight: 700;
+    width: 100px;
+    height: 60px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.logo:hover{
+    font-size: 20px;
+}
+
+
+.tabBar > a{
+    text-decoration: none;
+    color: black;
+}
+
+.tabBar > a:hover{
+    color: rgb(165, 165, 165);
+}
+
+.faceFooter{
+    display: flex;
+    justify-content: space-between;
+    margin: 0% 4%;
+    font-weight: 900;
+}
+
