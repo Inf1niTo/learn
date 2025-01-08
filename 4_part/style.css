@@ -10,13 +10,21 @@ header > div{
     height:6vw;
     align-items: center;
     padding: 0% 5%;
-}
 
+}
+.header{
+    min-height: 60px;
+}
 .tabBar{
     display: flex;
-
     width: 330px;
     justify-content: space-around;
+    min-width: 200px;
+    margin-left: 10%;
+}
+
+.tabBar > a{
+    margin: 0% 4%;
 }
 
 .face{
@@ -25,24 +33,34 @@ header > div{
     height: 80vh;
     text-align: center;
     align-content: center;
+
 }
 
 .firstText{
     font-weight: 600;
-    font-size: 40px;
+    font-size: calc(1em + 1vw);
 }
 .secondText{
     font-weight: 700;
-    font-size: 100px;
+    font-size: calc(1em + 7vw);
     padding-top: 20px;
 }
-
-.media { 
+.underFaceText{
     display: flex;
+    justify-content: center;
+}
+.media { 
     height: 50px;
     justify-content: space-around;
-    margin: 0px 36%;
+    /* margin: 0px 36%; */
+    
+
+
 }
+.media > button { 
+    margin: 0lh 2vw;
+}
+    
 
 .media > button:hover { 
 opacity: 0.7;
@@ -109,9 +127,91 @@ opacity: 0.7;
     justify-content: space-between;
     margin: 0% 4%;
     font-weight: 900;
-}
-.secondFace{
-    background-color: lightblue;
-    height: 100vh;
+    padding-bottom: 10vh;
 }
 
+.secondFace{
+    
+    text-align: center;
+    /* color: var(--color); */
+    width: 100%;
+    /* min-height: 100vh; */
+    display: flex;
+    background-image: url(/4_part/img/notebook.jpg) ;
+    /* align-items: center; */
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    background-attachment: fixed;
+    flex-direction: column;
+    
+}
+
+.thirdFace{
+    height: 100lh;
+
+}
+
+.expirience{
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.expirience > div{
+    text-align: center;
+    margin: 2% ;
+
+    height: 200px;
+    align-content: center;
+
+}
+
+[class^="ex"]> h3{
+    margin-bottom: 20px;
+}
+
+[class^="ex"]> p{
+    margin-bottom: 20px;
+    
+}
+[class^="ex"]> img{
+    margin-bottom: 20px;
+}
+
+.underEx{
+    display: flex;
+    padding-top: 10%;
+    justify-content: space-between;
+}
+
+.motivation{
+    padding-left: 2% ;
+    height: 20lh;
+    width: 50lh;
+}
+.motivation > h5{
+    font-size: calc(1em + 0.5vw);
+    padding-bottom: 20px;
+}
+
+.motivation > h1{
+    font-size: calc(1em + 3vw);;
+    font-weight: 900;
+}
+
+
+
+.anyText{
+ 
+    height: 20lh;
+    width: 50lh;
+}
+
+.anyText > p{
+    height: 50%;
+    font-size: large;
+    line-height: 26px;
+}
