@@ -15,7 +15,7 @@ body{
     background-image: url(/6_part/img/back2.jpg);
     box-shadow: inset 0 0 0 1000px rgba(5, 5, 5, 0.548);
     background-size: cover;
-    height: 100lvh;
+    min-height: 100lvh;
 }
 
 
@@ -98,17 +98,17 @@ header > a:hover{
     font-size: calc(1em + 0.2vw);
 }
 
-.centralText > p:first-of-type::before{
+/* .centralText > p:first-of-type::before{
     content: "";
     background: #ffffff69;
     width: 140%;
     height: 1px;
     position: absolute;
     right: 50%;
-    /* transform: rotate(deg); */
-}
+    transform: rotate(deg);
+} */
 
-.centralText > p:first-of-type::after{
+/* .centralText > p:first-of-type::after{
     content: "";
     background: #ffffff69;
     width: 120%;
@@ -116,8 +116,8 @@ header > a:hover{
     position: absolute;
     top: 50%;
     left: 30%;
-    /* transform: rotate(deg); */
-}
+    transform: rotate(deg);
+}  */
 
 /* ---------------------second block------------------------ */
 
@@ -180,7 +180,7 @@ header > a:hover{
     margin-bottom: 10%;
 }
 
-.textAbout > h3::before{
+/* .textAbout > h3::before{
     content: "";
     background-color: rgba(211, 211, 211, 0.699);
     height: 1px;
@@ -188,9 +188,9 @@ header > a:hover{
     right: -26% ;
     position: absolute;
 
-}
+} */
 
-.textAbout > h3::after{
+/* .textAbout > h3::after{
     content: "";
     background-color: rgba(211, 211, 211, 0.74);
     height: 1px;
@@ -198,7 +198,7 @@ header > a:hover{
     right: 26% ;
     top: 10%;
     position: absolute;
-}
+} */
 
 /* -----------------------------third block ---------------- */
 
@@ -338,15 +338,15 @@ header > a:hover{
     margin-bottom: 5%;
 }
 
-.photoProcess >h2::after{
+/* .photoProcess >h2::after{
     content: "";
     background-color: gray;
     height: 1px;
     width: 32%;
     position: absolute;
     left: 0;
-}
-.photoProcess >h2::before{
+} */
+/* .photoProcess >h2::before{
     content: "";
     background-color: gray;
     height: 1px;
@@ -354,7 +354,7 @@ header > a:hover{
     position: absolute;
     right: 0;
     top: 27%;
-}
+} */
 
 @keyframes zoom-scroll {
     0% {
@@ -378,3 +378,4 @@ header > a:hover{
       visibility: hidden;
     }
   }
+
