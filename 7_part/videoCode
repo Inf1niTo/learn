@@ -1,0 +1,1 @@
+ffmpeg -i C:\Users\tosha\Desktop\learn\7_part\media\1.mp4 -vf scale=1920:-1 -movflags faststart -vcodec libx264 -crf 20 -g 1 -pix_fmt yuv420p C:\Users\tosha\Desktop\learn\7_part\media\back1.mp4
