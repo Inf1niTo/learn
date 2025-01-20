@@ -96,7 +96,8 @@ button{
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
-    transition: 2s opacity ease-out;  
+    transition: 2s opacity ease-out; 
+    /* opacity: 0.2;  */
 }
 
 .video-background.change{

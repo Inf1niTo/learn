@@ -1,0 +1,27 @@
+{
+  "name": "8_part",
+  "version": "1.0.0",
+  "main": "index.js",
+"scripts": { 
+  "test": "node index.js", 
+  "webpack-version": "webpack --version", 
+  "sass-dev": "sass scss:dist/css", 
+  "sass-watch": "sass --watch scss:dist/css" 
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "jquery": "^3.7.1",
+    "popper.js": "file:1.16.1"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "sass-loader": "^16.0.4",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1"
+  }
+}
