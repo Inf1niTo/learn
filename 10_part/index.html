@@ -5,19 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/10_part/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <header class="header">
-        <a href ="#" class="logo"></a>
+        <img src ="/10_part/svg/uPkJyIs01.svg" class="logo"></img>
         <div class="top-buttons">
-            <a href="#header">Home</a>
             <a href="#coctails">coctails</a>
             <a href="#price">price</a>
             <a href="#location">location</a>
+            <a href="#media">Media</a>
         </div>
     </header>
     <div id="first">
         <div id="container">
+            <div class="first-shape"></div>
+            <div class="second-shape"></div>
+
             <div class="letter_container">
                 <div class="letter front_letter">R</div>
                 <div class="letter back_letter_red">R</div>
@@ -73,15 +78,176 @@
         </div>
     </div>
     <div id="coctails">
-            
-    </div>
+        <div class="textCoctails">
+            <p>Откройте тайну <br> идеального коктейля</p>
+            <p>Каждый коктейль — это маленькая загадка, которая ждет, чтобы вы ее разгадали. Погрузитесь в мир вкусов, ароматов и неожиданных сочетаний. Выберите ингредиенты или доверьтесь интуиции, чтобы найти свой напиток, который расскажет вашу историю. Добро пожаловать в путешествие, где каждый глоток — это шаг к неизведанному.</p>
+        </div>
 
+        <div class="container swiper">
+            <div class="slider-wrapper">
+                <div class="carusel swiper-wrapper">
+                    <div class="firstCoctail swiper-slide">
+                        <img src="/10_part/svg/1.svg"></img>
+        
+                        <p>Космополитен</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Водка, морс, лимон)</p>
+                        </div>
+                    </div>
+        
+                    <div class="secondCoctail swiper-slide">
+                        <img src="/10_part/svg/2.svg"></img>
+        
+                        <p>Элегия</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Виски, кола)</p>
+                        </div>
+                    </div>
+        
+                    <div class="thirdCoctail swiper-slide">
+                        <img src="/10_part/svg/3.svg"></img>
+        
+                        <p>Миледи</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Водка, вермут, тоник)</p>
+                        </div>
+                    </div>
+        
+                    <div class="fourtCoctail swiper-slide">
+                        <img src="/10_part/svg/4.svg"></img>
+        
+                        <p>Ягодный сад</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Водка, тоник, сироп)</p>
+                        </div>
+                    </div>
+        
+                    <div class="fiveCoctail swiper-slide">
+                        <img src="/10_part/svg/5.svg"></img>
+        
+                        <p>Вечер Джаза</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Джин, спрайт/тоник, мята)</p>
+                        </div>
+                    </div>
+        
+                    <div class="sixCoctail swiper-slide">
+                        <img src="/10_part/svg/6.svg"></img>
+        
+                        <p>Френч 75</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Джин, лимон, сироп, игристое)</p>
+                        </div>
+                    </div>
+        
+                    <div class="sevenCoctail swiper-slide">
+                        <img src="/10_part/svg/7.svg"></img>
+        
+                        <p>Лимонная Феерия</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Водка, лимон, содовая/лимонад)</p>
+                        </div>
+                    </div>
+        
+                    <div class="eightCoctail swiper-slide">
+                        <img src="/10_part/svg/8.svg"></img>
+        
+                        <p>Лагуна Грез</p>
+        
+                        <div class="aboutCoctail">
+                            <p>(Водка, спрайт, сироп)</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+
+        </div>
+        
+    </div>
     <div id="price">
+        <div class="priceText">
+            <p>Pricing</p>
+            <p>Наши услуги — это возможности, созданные для вас. Исследуйте варианты и найдите то, что отвечает вашим ожиданиям.</p>
+            <h5>Ваш выбор — ваш стиль.</h5>
+        </div>
+
+        <div class="priceCards">
+
+            <div class="firstCard card">
+                <h3>Обычный</h3>
+                <h4>600р</h4>
+                <p>Вход в атмосферу вечера и доступ к меню бара за дополнительную плату.</p>
+
+                <div class="firstCardPoints check">
+                    <p><img src="/10_part/svg/check.svg">Вход</p>
+                    <p><img src="/10_part/svg/check.svg">Музыка</p>
+                    <p><img src="/10_part/svg/check.svg">Общая зона</p>
+                </div>
+            </div>
+
+            <div class="secondCard card">
+                <h3>Free-bar</h3>
+                <h4>1400р</h4>
+                <p>Свобода вкусов — неограниченные напитки из специального меню</p>
+
+                <div class="firstCardPoints check">
+                    <p><img src="/10_part/svg/check.svg">Вход</p>
+                    <p><img src="/10_part/svg/check.svg">Музыка</p>
+                    <p><img src="/10_part/svg/check.svg">Игры с шотами</p>
+                    <p><img src="/10_part/svg/check.svg">Напитки без ограничений</p>
+                </div>
+            </div>
+
+            <div class="thirdCard card">
+                <h3>All in</h3>
+                <h4>1900р</h4>
+                <p>Полный доступ: напитки, закуски и игры.</p>
+
+                <div class="firstCardPoints check">
+                    <p><img src="/10_part/svg/check.svg">Вход</p>
+                    <p><img src="/10_part/svg/check.svg">Музыка</p>
+                    <p><img src="/10_part/svg/check.svg">Игры с шотами</p>
+                    <p><img src="/10_part/svg/check.svg">Напитки без ограничений</p>
+                    <p><img src="/10_part/svg/check.svg">Закуски</p>
+                </div>
+            </div>
+        </div>
         
     </div>
 
     <div id="location">
-        
+        <div class="locationText">
+            <h1>Location</h1>
+            <p>Добро пожаловать в уникальное пространство, где стиль встречается с комфортом. Современный лофт в самом сердце города станет идеальной площадкой для вашего вечера. Уютные зоны для общения, бар с изысканными коктейлями, яркая музыка и увлекательные развлечения создадут атмосферу, которая останется в памяти надолго. Здесь каждый уголок продуман для вашего удовольствия!</p>
+        </div>
+        <div class="map"><a href="https://yandex.ru/maps/org/loft_tropicana/148333684159/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a><a href="https://yandex.ru/maps/213/moscow/category/rental_of_venues_for_cultural_events/15215599314/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:14px;"></a><iframe src="https://yandex.ru/map-widget/v1/?ll=37.753913%2C55.753545&mode=search&oid=148333684159&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRJNoIhF4EJAEYHMzqJ34EtAEhIJXf5D%2Bu3rkD8Rlpf8T%2F7ufT8iBgABAgMEBSgKOABA%2F5EHSAFqAnJ1nQHNzMw9oAEAqAEAvQEhKI0dwgEGv8uBy6gEggI6TG9mdCBUcm9waWNhbmEg0K3Qu9C10LrRgtGA0L7QtNC90LDRjyDRg9C7LiwgMiwg0YHRgtGALiAyOYoCAJICAzIxM5oCDGRlc2t0b3AtbWFwcw%3D%3D&sll=37.753913%2C55.753545&sspn=0.022557%2C0.007308&text=Loft%20Tropicana%20%D0%AD%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%B4%D0%BD%D0%B0%D1%8F%20%D1%83%D0%BB.%2C%202%2C%20%D1%81%D1%82%D1%80.%2029&z=16.45"  allowfullscreen="true" style="position:relative;"></iframe></div>        
+        <div class="psText">
+            <p>г.Москва Электродная ул., 2, стр. 29 Tropicana лофт</p>
+        </div>
     </div>
+
+    <footer id="media">
+        <div class="social">
+            <div class="tg">
+                <a href="https://t.me/ravennparty"><img class="tgIcon" src="/10_part/svg/tg.svg" alt=""></a>
+                <p>Telegram</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/10_part/script.js"></script>
 </body>
 </html>

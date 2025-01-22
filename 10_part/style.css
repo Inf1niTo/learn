@@ -6,7 +6,10 @@
 }
 body{
     background: #000;
+    overflow-x: hidden;
 }
+
+
 
 @font-face {
     font-family: "Rq";
@@ -31,7 +34,37 @@ body{
     
 }
 #first{
+    position: relative;
     height: 92vh;
+    /* background-image: url(/10_part/bck/blur\ light\ background\ by\ freeject\ 3.jpg); */
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.first-shape{
+    position: absolute;
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background-color: rgba(212, 0, 255, 0.039);
+    filter: blur(5.9rem);
+    animation: 30s firstShapeAnim  infinite;
+    z-index: -1;
+}
+
+.second-shape{
+    position: absolute;
+    /* right: 0;
+    bottom: 0; */
+    width: 60vh;
+    height: 60vh;
+    border-radius: 50%;
+    background-color: rgba(212, 0, 255, 0.039);
+    filter: blur(5.9rem);
+    animation: 30s secondShapeAnim  infinite;
+    z-index: -1;
+    
 }
 
 .letter_container{
@@ -49,8 +82,6 @@ body{
     top: 1vw;
     left: 1vw;
     animation: letter_animation 1s linear infinite;
-    filter: blur(1px);
-    
 }
 
 .front_letter{
@@ -97,6 +128,8 @@ header{
     text-decoration: none;
     text-transform: uppercase;
     font-size: calc(1vw + 1vh);
+    text-shadow: 3px 3px 1px #7e0073;
+    z-index: 1;
 }
 
 .top-buttons:hover a:not(:hover){
@@ -104,39 +137,324 @@ header{
     animation: letter_animation 1s linear infinite;
 }
 
-
-.top-buttons > a:hover::before {
-
-}
-
-
-
 .logo{
     display: flex;
     position: absolute;
-    background-image: url(/10_part/svg/uPkJyIs01.svg);
     height: 100%;
     width: 8vh;
-    background-size: 100%;
-    background-repeat: no-repeat;
     left: 0%;
-    background-color: #000;
 }
 
 #coctails{
+    display: flex;
     height: 100vh;
-    background-color: antiquewhite;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
 }
 
-#price{
-    height: 100vh;
-    background-color: rgb(150, 114, 67);
+.textCoctails{
+    width: 40%;
+    margin-inline: 5%;
 }
+
+.textCoctails>p:first-child{
+    text-align: center;
+    font-size: calc(2vh + 1vw);
+    font-family: rq;
+    color: #8f00bb;
+    text-shadow: 1px 1px 20px rgb(247, 25, 255);
+    padding-bottom: calc(1vh + 1vw);
+    
+    
+}
+
+.textCoctails>p:first-child::after{
+    content: "";
+    text-shadow: 10px 10px 12px #ffffff;
+}
+
+.textCoctails>p:last-child{
+    font-size: calc(0.3vh + 1vw);
+    font-family: cursive;
+    color: #ffffff;
+
+}
+
+.container{
+    width: 30%;
+    color: #ffffff;
+    height: 30vh;
+
+    align-content: center;
+}
+
+.carusel{
+
+}
+
+.swiper-button-prev, .swiper-button-next{
+    width: 10px;
+    height: 10px;
+}
+
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: #ffffff; 
+    font-size: 20px !important;
+
+}
+
+
+.swiper-slide{
+    position: relative;
+    text-align: center;
+}
+
+.swiper-slide > p{
+    font-size: calc(1.6vw + 1vh);
+    font-weight: 900;
+    text-shadow: 3px 2px 1px #7e0073;
+}
+
+
+.swiper-slide > img{
+    height: 100%;
+    width: 14vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 20px 0px;
+}
+
+.swiper-slide > .aboutCoctail{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: calc(0.5vw + 1vh);
+}
+
+.carusel > div{
+    font-family: cursive;
+    
+}
+
+
+#price{
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.priceText{
+    display: flex;
+    flex-flow: column;
+    width: 40%;
+    min-height: 30vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+}
+
+.priceText > p:first-of-type{
+    font-family: rq;
+    font-size: calc(3vw + 1vh);
+    color: #8f00bb;
+    text-shadow: 1px 1px 20px rgb(247, 25, 255);
+    padding-bottom: 20px;
+}
+
+.priceText > p:last-of-type{
+    font-family: cursive;
+    font-size: calc(0.7vw + 1vh);
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.priceText > h5{
+    border-bottom: 1px solid #ffffff;
+    font-family: cursive;
+    font-size: calc(0.5vw + 1vh);
+    color: #ffffff;
+}
+
+.priceCards{
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 8%;
+}
+
+.priceCards > div{
+    background-color: grey;
+    width: 30%;
+    padding: 2%;
+    color: white;
+    font-family: cursive;
+
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.4px);
+    -webkit-backdrop-filter: blur(4.4px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card > h3{
+    font-size: calc(1vw + 1vh);
+    font-weight: 100;
+}
+
+.card > h4{
+    font-size: calc(1vw + 1vh);
+    font-weight: 100;
+}
+
+.card > p{
+    font-size: calc(0.6vw + 1vh);
+    font-weight: 100;
+    padding-bottom: 10%;
+    align-items: center;
+}
+p > img{
+    width: calc(0.8vw + 1vh);
+}
+
+.check > p{
+    display: flex;
+    align-items: center;
+    padding: 2% 0px;
+}
+.check{
+    position: relative;
+}
+
+.check::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    top: -4px;
+    background: rgba(255, 255, 255, 0.19);
+    
+}
+
+.card{
+    transition: 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px #7e0073;
+}
+/* .top-buttons:hover a:not(:hover) */
+.priceCards:hover .card:not(:hover){
+    filter: blur(4px);
+}
+
 
 #location{
     height: 100vh;
-    background-color: rgb(226, 202, 171);
+    background-color: rgb(0, 0, 0);
 }
+
+.locationText{
+    display: flex;
+    flex-flow: column;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+}
+
+.locationText > h1{
+    font-family: rq;
+    font-size: calc(3vw + 1vh);
+    color: #8f00bb;
+    text-shadow: 1px 1px 20px rgb(247, 25, 255);
+    padding-bottom: 20px;
+}
+
+.locationText > p{
+    font-family: cursive;
+    font-size: calc(0.7vw + 1vh);
+    color: #ffffff;
+    padding-bottom: 20px;
+    width: 70%;
+}
+
+.map{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.map > iframe{
+    width: 80%;
+    height: 60vh;
+    border: none;
+}
+
+.psText{
+    font-family: cursive;
+    font-size: calc(0.2vw + 1vh);
+    color: #7c7c7c;
+    
+    margin: 0px 10%;
+}
+
+footer{
+    position: relative;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inTg{
+    color: white;
+}
+.tg{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+footer::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #5600585b;
+    top: 0;
+}
+
+footer::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #5600585b;
+    box-shadow: 0px 10px 50px 40px#8f00bb31;
+    bottom: 0;
+}
+
+.tgIcon{
+    height: 100%;
+    width: 3vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+       
+}
+
+.tg > p{
+    font-family: cursive;
+    font-size: calc(0.7vw + 1vh);
+    color: #ffffff;
+}
+
 
 
 @keyframes letter_animation {
@@ -156,9 +474,7 @@ header{
         filter: blur(1px);
     }
     30%{
-        font-weight: normal;
-        transform: translate(0px, 0px);
-        filter: blur(2px);
+
     }
     40%{
         font-weight: bold;
@@ -195,4 +511,46 @@ header{
         transform: translate(2px, 2px);
         filter: blur(1px);
     }
+}
+
+@keyframes firstShapeAnim {
+    0%{
+        right: 0vw;
+        bottom: 10vw;
+    }
+    30%{
+        right: 40vw;
+        bottom: 10vw;
+    }
+    60%{
+        right: 20vw;
+        bottom: -10vw;
+    }
+
+    100%{
+        right: 0vw;
+        bottom: 10vw;
+    }
+    
+}
+
+@keyframes secondShapeAnim {
+    0%{
+        left: 0;
+        top: -10vw;
+    }
+    30%{
+        left: 0vw;
+        top: 10vw;
+    }
+    60%{
+        left: 60vw;
+        top: -10vw;
+    }
+
+    100%{
+        left: 0vw;
+        top: 10vw;
+    }
+    
 }

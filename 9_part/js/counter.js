@@ -29,6 +29,13 @@ window.addEventListener('click', function(event){
             event.target.closest('.cart-item').remove();
         }
         toggleCartStatus()
+
+
+        calcCartPrice()
+    }
+
+    if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')){
+        calcCartPrice()
     }
 
 
