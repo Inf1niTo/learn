@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script src="https://api-maps.yandex.ru/v3/?apikey=1576e90f-5a65-4e1a-9087-d19429abaa92&lang=ru_RU"></script>
+    <script>
+        initMap();
+
+        async function initMap() {
+            await ymaps3.ready;
+
+            const {YMap, YMapDefaultSchemeLayer} = ymaps3;
+
+            const map = new YMap(
+                document.getElementById('map'),
+                {
+                    location: {
+                        center: [37.588144, 55.733842],
+                        zoom: 10
+                    }
+                }
+            );
+
+            map.addChild(new YMapDefaultSchemeLayer());
+        }
+    </script>
+
+    <script src="https://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+    <script type="text/javascript">
+        var map;
+    
+        DG.then(function () {
+            map = DG.map('map', {
+                center: [54.98, 82.89],
+                zoom: 13
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="map" style="width: 600px; height: 400px"></div>
+    <div id="map" style="width:500px; height:400px"></div>
+</body>
+</html>
