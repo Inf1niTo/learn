@@ -1,4 +1,5 @@
 * {
+    margin-top: 0;
     box-sizing:border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
@@ -7,12 +8,33 @@
 
 /* Общий стиль для header */
 header {
+    
     display: flex;
     justify-content: space-between; /* Разделяет содержимое на две стороны */
     align-items: center; /* Центрирует элементы по вертикали */
     padding: 0 20px; /* Внутренние отступы слева и справа */
     background-color: #ffffff; /* Фоновый цвет */
     
+}
+
+.menu{
+    position: absolute;
+    background-color: #888888;
+    width: 30vh;
+    height: 100vh;
+
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
 header > div h3{
@@ -312,3 +334,7 @@ footer > button:active {
     transform: translateY(20%);
 
 }
+
+
+
+
