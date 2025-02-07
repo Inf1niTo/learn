@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* @font-face {
+    font-family: ;
+    src: url();
+} */
+
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+
+.last-album, .songs,
+ .albums, .music-player,
+  .shop, .portfolio {
+    
+    height: 100vh;
+    
+  }
+
+header{
+    display: flex;
+    height: 8vh;
+    background-color: black;
+    justify-content: end;
+    align-items: center;
+    padding-right: 10%;
+}
+
+
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    height: 92vh;
+    background-color: rgb(44, 44, 44);
+    justify-content: center;
+    align-items: center;
+}
+.welcome-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+.welcome-text > h1{
+    font-size: calc(var(--index) * 2.2);
+}
+
+.welcome-text > h5{
+    font-size: calc(var(--index) * 0.6);
+}
+
+.welcome-text > *{
+    padding: 4% 0%;
+    
+}
+
+.welcome-arrow-down{
+    color: lightgray;
+    font-size: calc(var(--index) * 1.3);
+    transform:rotate(-90deg);
+    text-decoration: none;
+}
+
+
+
